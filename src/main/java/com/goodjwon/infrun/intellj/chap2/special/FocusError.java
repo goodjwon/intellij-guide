@@ -7,6 +7,7 @@ public class FocusError {
      * 에러 찾기: F2
      */
     public void moveError(){
-        return "";
+
+        //return "";
     }
 }
