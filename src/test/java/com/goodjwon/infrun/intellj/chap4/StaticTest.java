@@ -16,6 +16,6 @@ public class StaticTest {
 
     @Test   //static 메소드 호출 control + space * 2
     public void name2(){
-        Assert.assertThat();
+//        Assert.assertThat();
     }
 }

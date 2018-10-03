@@ -1,7 +1,7 @@
 package com.goodjwon.infrun.intellj.chap6.extract;
 
 /**
- * InnerClass 밖으로 빼기.
+ * InnerClass 추출하기 혹은 이동하기 .
  */
 public class InnerClass {
 
