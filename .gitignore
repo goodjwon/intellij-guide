@@ -5,3 +5,5 @@ gradle/
 gradlew
 gradlew.bat
 settings.gradle
+intellij-guide.iml
+
