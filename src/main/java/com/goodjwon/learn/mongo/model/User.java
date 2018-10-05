@@ -14,7 +14,7 @@ import java.util.List;
 public class User {
 
     @Id
-    private Long id;
+    private Object id;
     private String userId;
     private String userName;
     private String eamliAddress;
