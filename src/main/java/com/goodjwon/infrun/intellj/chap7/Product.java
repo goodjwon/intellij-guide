@@ -3,6 +3,7 @@ package com.goodjwon.infrun.intellj.chap7;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.NoArgsConstructor;
+import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.persistence.*;
@@ -12,7 +13,7 @@ import javax.persistence.*;
 public class Product {
 
     @Id
-    private Long id;
+    private ObjectId id;
 
     private long amount;
 
@@ -25,7 +26,7 @@ public class Product {
         this.name = name;
     }
 
-    public Long getId() {
+    public ObjectId getId() {
         return id;
     }
 

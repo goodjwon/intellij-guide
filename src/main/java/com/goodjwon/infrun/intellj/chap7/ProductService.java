@@ -1,5 +1,6 @@
 package com.goodjwon.infrun.intellj.chap7;
 
+import org.bson.types.ObjectId;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.stereotype.Service;
 
@@ -10,12 +11,11 @@ public class ProductService {
     private final ProductRepository productRepository;
 
     public ProductService(ProductRepository productRepository) {
-
         this.productRepository = productRepository;
     }
 
     @Transactional
-    public Long register(long amt, String name){
+    public ObjectId register(long amt, String name){
 
         Product product = new Product(amt, name);
 

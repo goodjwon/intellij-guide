@@ -12,6 +12,7 @@ package com.goodjwon.infrun.intellj.chap7;
  * Watch 브레이크 이후에 속속에 관련된 값을 찾을 때 사용: 없음
  */
 
+import org.bson.types.ObjectId;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -20,6 +21,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertThat;
 
 @RunWith(SpringRunner.class)
@@ -40,10 +42,10 @@ public class ProductServiceTest {
     @Test
     public void 기본디버깅() {
         //given & when
-        Long id = productService.register(1000L, "책");
+         ObjectId id = productService.register(1000L, "책");
 
         //then
-        assertThat(id, is(1L));
+        assertNotNull(id);
     }
 
     @Test
