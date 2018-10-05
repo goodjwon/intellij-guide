@@ -3,22 +3,21 @@ package com.goodjwon.infrun.intellj.chap7;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.NoArgsConstructor;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.persistence.*;
 
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
-@Entity
+@NoArgsConstructor
+@Document
 public class Product {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column
     private long amount;
 
-    @Column
     private String name;
+
 
     @Builder
     public Product(long amount, String name) {

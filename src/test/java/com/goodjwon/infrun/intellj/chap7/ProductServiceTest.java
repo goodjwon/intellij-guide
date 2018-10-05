@@ -34,7 +34,7 @@ public class ProductServiceTest {
 
     @After
     public void tearDown() throws Exception {
-        productRepository.deleteAllInBatch();
+        productRepository.deleteAll();
     }
 
     @Test
