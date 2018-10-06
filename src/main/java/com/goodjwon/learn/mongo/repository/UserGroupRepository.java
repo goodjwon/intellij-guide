@@ -1,4 +1,4 @@
-package com.goodjwon.learn.mongo.dao;
+package com.goodjwon.learn.mongo.repository;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
