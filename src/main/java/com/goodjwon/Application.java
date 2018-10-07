@@ -1,4 +1,4 @@
-package com.goodjwon.infrun.intellj;
+package com.goodjwon;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

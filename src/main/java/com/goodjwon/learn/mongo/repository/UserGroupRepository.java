@@ -1,6 +1,12 @@
 package com.goodjwon.learn.mongo.repository;
 
+import com.goodjwon.learn.mongo.model.UserGroup;
+import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-public interface UserGroupRepository extends MongoRepository <UserGroupRepository, String> {
+import java.util.Optional;
+
+public interface UserGroupRepository extends MongoRepository<UserGroup, ObjectId> {
+
+    Optional<UserGroup> findByUserGroupName(String userGroupName);
 }

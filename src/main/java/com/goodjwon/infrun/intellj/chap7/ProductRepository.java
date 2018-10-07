@@ -1,7 +1,6 @@
 package com.goodjwon.infrun.intellj.chap7;
 
 import org.bson.types.ObjectId;
-import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.Optional;
