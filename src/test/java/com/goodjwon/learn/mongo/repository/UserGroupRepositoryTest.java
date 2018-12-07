@@ -34,7 +34,6 @@ public class UserGroupRepositoryTest {
 //        userGroupRepository.deleteAll();
     }
 
-
     @Test
     public void testInsertUserGroup() {
 
@@ -44,8 +43,14 @@ public class UserGroupRepositoryTest {
         assertThat(userGroup.getUserGroupName(), is("asdf"));
 
 
-        userGroup = userGroupService.register(
-                new UserGroup("201812235", "asdf2"));
+        UserGroup newUserGroup = new UserGroup(
+                userGroup.getId(),
+                "201812234",
+                "asdf2"
+        );
+
+        //register 동일 ID가 넘어갔을 때 값을 확인 한다. save. insert or update
+        userGroup = userGroupService.register(newUserGroup);
 
         assertThat(userGroup.getUserGroupName(), is("asdf2"));
 
@@ -53,6 +58,8 @@ public class UserGroupRepositoryTest {
 
     @Test
     public void testSelectUserGroup() {
-
+        //given
+        //when
+        //then
     }
 }
